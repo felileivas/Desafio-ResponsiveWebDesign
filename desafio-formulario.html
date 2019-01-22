@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+        crossorigin="anonymous">
+    <style>
+        body {
+            background-color: antiquewhite;
+        }
+    </style>
+    <title>desafio formulario</title>
+</head>
+
+<body class="container-fluid">
+    <br>
+    <h1 id="title" class="text-center">Formulario</h1>
+    <div class="card">
+        <div class="card-header">
+            <br>
+            <p id="description">Formulario creado para el desafio FCC</p>
+        </div>
+        <div class="card-body">
+            <form action="" method="GET" id="survey-form">
+                <div class="form-group">
+                    <label id="name-label" for="exampleNombre">Nombre:</label>
+                    <input autofocus type="text" name="name" id="name" class="input-field form-control" placeholder="Ingresa nombre completo"
+                        required>
+                    <small class="form-text text-muted">Ingresa tu nombre.</small>
+                    <br>
+                    <label id="email-label" for="email">Direccion de correo:</label>
+                    <input type="email" class="input-field form-control" id="email" placeholder="Ingresa email"
+                        required>
+                    <small class="form-text text-muted">Ingresa tu correo electronico.</small>
+                    <br>
+                    <label id="number-label" for="number">Edad:</label>
+                    <input type="number" class="input-field form-control" id="number" placeholder="Ingresa numero" min="1"
+                        max="125" required>
+                    <small class="form-text text-muted">Ingresa la cantidad correcta.</small>
+                    <br>
+                    <label for="select">Selecciona el perfil que te interesa:</label>
+                    <select id="dropdown" class="form-control">
+                        <option disabled value>Elige una opcion</option>
+                        <option value="devbackend">Desarrollador Back End</option>
+                        <option value="devfullstack">Desarrollador Full Stack</option>
+                        <option value="devfrontend">Desarrollador Front End</option>
+                    </select>
+                    <small class="form-text text-muted">Solo selecciona un interes.</small>
+                    <br>
+                    <label id="radio-label">Selecciona el valor:</label>
+                    <br>
+                    <div class="form-check form-check-inline">
+                        <input name="radio-buttons" value="1" type="radio" class="valorValue" <label class="form-check-label"
+                            for="inlineRadio1"> Valor 1</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input name="radio-buttons" value="2" type="radio" class="valorValue" <label class="form-check-label"
+                            for="inlineRadio2"> Valor 2</label>
+                    </div>
+                    <br>
+                    <label id="radio-label">Selecciona los o el valor:</label>
+                    <br>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" name="prefer" value="1" type="checkbox" class="valorValue">
+                        <label class="form-check-label" for="inlineCheckbox1">1</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" name="prefer" value="2" type="checkbox" class="valorValue">
+                        <label class="form-check-label" for="inlineCheckbox2">2</label>
+                    </div>
+                    <br>
+                    <label>Comentario:</label>
+                    <textarea class="form-control" rows="3"></textarea>
+                    <br>
+                    <a id="submit" href="#" type="submit" class="btn btn-primary">Enviar Formulario</a>
+            </form>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
